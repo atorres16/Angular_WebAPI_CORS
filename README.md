@@ -27,7 +27,6 @@
 
                 //CORS
                 EnableCorsAttribute cors = new EnableCorsAttribute("http://localhost", "Accept, Origin, Content-Type, X-Auth-Token, cache-control, x-requested-with", "GET, POST ,PATCH, PUT, DELETE, OPTIONS");
-                 POST ,PATCH, PUT, DELETE, OPTIONS");
                 cors.SupportsCredentials = true;
                 config.EnableCors(cors);
 
@@ -196,6 +195,7 @@
     ng serve
     ```    
 21. You should see the list of employees on screen
+    
 ![](images/2020-09-21-17-17-58.png)    
 ## Resources
 * https://stackoverflow.com/questions/48318464/angular-4-httpclient-cors-windows-auth?rq=1
