@@ -1,4 +1,4 @@
-# How to enable CORS between an Angular app and an ASP.Net Web API Service with Windows Authentication
+# How to enable CORS between an Angular app and an ASP.Net Web API Service
 ## Works for
 * NET Framework 4.8
 * Microsoft ASPNET Web API 
