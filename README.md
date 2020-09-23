@@ -17,30 +17,6 @@
         public string Email { get; set; }
     }
    ```
-4. Enable CORS in ***WebApiConfig.cs***   
-    ```csharp
-        public static class WebApiConfig
-        {
-            public static void Register(HttpConfiguration config)
-            {
-                // Web API configuration and services
-
-                //CORS
-                EnableCorsAttribute cors = new EnableCorsAttribute("http://localhost", "Accept, Origin, Content-Type, X-Auth-Token, cache-control, x-requested-with", "GET, POST ,PATCH, PUT, DELETE, OPTIONS");
-                cors.SupportsCredentials = true;
-                config.EnableCors(cors);
-
-                // Web API routes
-                config.MapHttpAttributeRoutes();
-
-                config.Routes.MapHttpRoute(
-                    name: "DefaultApi",
-                    routeTemplate: "api/{controller}/{id}",
-                    defaults: new { id = RouteParameter.Optional }
-                );
-            }
-        }
-    ```
 5. Create the ***Employees*** controller, right click the ***Controllers*** folder and click ***Add Controller***
 6. In the ***Add Scaffold*** window, select ***Web API 2 Controller - Empty***
 7. In ***Controller Name*** write ***EmployeesController***
