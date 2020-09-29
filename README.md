@@ -182,7 +182,9 @@
 
     }
     ngOnInit(): void {
-        this.httpClient.get<Employee[]>('http://localhost:54125/api/employees')
+        this.httpClient.get<Employee[]>('http://localhost:54125/api/employees',
+        { withCredentials:true }
+        )
         .subscribe((employees: Employee[]) => {
             this.Employees = employees;
         });
