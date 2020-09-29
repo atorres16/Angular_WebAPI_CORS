@@ -1,4 +1,5 @@
 # How to enable CORS between an Angular app and an ASP.Net Web API Service
+If you have an ASP Net WebAPI service running in one domain, and an angular app running in another domain, you'll need to enable CORS in the web service, in this example, we're also enabling Windows authentication
 ## Works for
 * NET Framework 4.8
 * Microsoft ASPNET Web API 
