@@ -95,6 +95,10 @@
                 // Web API configuration and services
                 EnableCorsAttribute cors = new EnableCorsAttribute("http://localhost:4200", "Accept, Origin, Content-Type, X-Auth-Token, cache-control, x-requested-with", "GET, POST ,PATCH, PUT, DELETE, OPTIONS");
 
+                //In my case, this also works
+                //EnableCorsAttribute cors = new EnableCorsAttribute( "*" ...
+                
+
                 cors.SupportsCredentials = true;
                 config.EnableCors(cors);
             }
